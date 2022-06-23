@@ -1,7 +1,10 @@
 import React from 'react'
 
-const PracticeLitteMore = ({brand,km, color}) => {
-    
+const PracticeLitteMore = ({brand,km,color, newbrand}) => {
+  
+
+  
+  // is inrest reuse props 
     return (<>
       <h2> DETAILS OF CAR </h2>
       <ul>
@@ -10,6 +13,13 @@ const PracticeLitteMore = ({brand,km, color}) => {
         <li>Color: {color} </li>
       </ul>
            
+           {newbrand && <p> this car is new</p> }
+
+
+
+
+
+          
     </>)
 }
 
