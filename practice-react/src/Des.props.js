@@ -14,11 +14,6 @@ const PracticeLitteMore = ({brand,km,color, newbrand}) => {
       </ul>
            
            {newbrand && <p> this car is new</p> }
-
-
-
-
-
           
     </>)
 }
