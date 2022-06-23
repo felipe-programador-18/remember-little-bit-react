@@ -2,11 +2,12 @@ import React,{useState} from 'react'
 
 import './App.css';
 import CreateObject from './Keys';
+import CreateAnotherPrac from './reminber';
 
 const Employees = ['martins','ProgrammerFelipe']
 
 const AddingFunction = () => {
- console.log(Employees)
+ 
     return(<>
       <ul>
         { Employees.map((create, index) => (
@@ -22,9 +23,20 @@ function App() {
   const [list]= useState(['Felipe','Programmer','Programer-floripa'])
    
   //create example real if went date about database ?
-  const [users] =  useState([{id:3232323, name:'ProgrammerFELIE', age:34},
-   {id:34324, name:'Programmer Felipe', age:434}
+  const [users, setUser] =  useState([{id:1, name:'ProgrammerFELIE', age:34},
+   {id:2, name:'Programmer Felipe', age:434}
   ])
+
+
+  //create function to practice and deleted data of 
+  const delAllvalue = () => {
+   const get = Math.floor(Math.random() * 4)
+    setUser( (prevValue) => {
+      return prevValue.filter((result) => get !== result.id  )
+    })
+  }
+
+
 
 
   return (
@@ -41,6 +53,10 @@ function App() {
            <li key={user.id}> {user.name} - {user.age} </li>
           ) )}
        </ul>
+
+       <button onClick={delAllvalue }>Delete!</button>
+
+       <CreateAnotherPrac/>
     </div>
   );
 }
