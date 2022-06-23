@@ -73,7 +73,7 @@ function App() {
    
 
 
-    <CreateProps>
+    <CreateProps newValue='adding' >
      <p>adding more practice about little bit code</p>
      <h1>adding more issues to think about through</h1>
      
