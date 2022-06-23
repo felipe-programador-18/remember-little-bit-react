@@ -22,6 +22,9 @@ const AddingFunction = () => {
 
 }
 function App() {
+  const cars = [{id:1, brand:'palio', color:'red', km:323233, newbrand:true},
+  {id:2,brand:'fiesta', color:'green' , km:3234, newbrand:true},
+{id:3, brand:'newiss', color:'orange' , km:32, newbrand:true}]
   const [list]= useState(['Felipe','Programmer','Programer-floripa'])
    
   //create example real if went date about database ?
@@ -61,7 +64,12 @@ function App() {
        <CreateAnotherPrac/>
        <CreateAllprops name='Programer Floripa here' />
 
-       <PracticeLitteMore brand='ferrari' km={30000} color='gray'  />
+       <PracticeLitteMore brand='ferrari' km={30000} color='gray' newbrand={false}  />
+       <PracticeLitteMore brand='ferrari' km={30000} color='gray' newbrand={false}  />
+       <PracticeLitteMore brand='renault' km={343240} color='red'  newbrand={true}  />
+
+       {cars.map((car) => (<PracticeLitteMore brand={car.brand} color={car.color}  km={car.km}  newbrand={true}  />))}
+   
     </div>
   );
 }
