@@ -1,7 +1,9 @@
 import React,{useState} from 'react'
 
 import './App.css';
+import PracticeLitteMore from './Des.props';
 import CreateObject from './Keys';
+import CreateAllprops from './Props';
 import CreateAnotherPrac from './reminber';
 
 const Employees = ['martins','ProgrammerFelipe']
@@ -57,6 +59,9 @@ function App() {
        <button onClick={delAllvalue }>Delete!</button>
 
        <CreateAnotherPrac/>
+       <CreateAllprops name='Programer Floripa here' />
+
+       <PracticeLitteMore brand='ferrari' km={30000} color='gray'  />
     </div>
   );
 }
