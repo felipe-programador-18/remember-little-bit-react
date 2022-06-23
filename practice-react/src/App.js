@@ -5,6 +5,7 @@ import PracticeLitteMore from './Des.props';
 import CreateObject from './Keys';
 import CreateAllprops from './Props';
 import CreateAnotherPrac from './reminber';
+import CreateProps from './testcreate';
 
 const Employees = ['martins','ProgrammerFelipe']
 
@@ -70,6 +71,16 @@ function App() {
 
        {cars.map((car) => (<PracticeLitteMore brand={car.brand} color={car.color}  km={car.km}  newbrand={true}  />))}
    
+
+
+    <CreateProps>
+     <p>adding more practice about little bit code</p>
+     <h1>adding more issues to think about through</h1>
+     
+      
+    </CreateProps>
+
+
     </div>
   );
 }
