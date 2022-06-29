@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import AddingMoreProps from './anotherfile';
 
 import './App.css';
 import PracticeLitteMore from './Des.props';
@@ -47,6 +48,7 @@ function App() {
 
   return (
     <div className="App">
+      <AddingMoreProps name='Programer' age={29} />
       <h1>testing another way of practice and learn more react</h1>
         <AddingFunction />
         <CreateObject/>
@@ -69,7 +71,7 @@ function App() {
        <PracticeLitteMore brand='ferrari' km={30000} color='gray' newbrand={false}  />
        <PracticeLitteMore brand='renault' km={343240} color='red'  newbrand={true}  />
 
-       {cars.map((car) => (<PracticeLitteMore brand={car.brand} color={car.color}  km={car.km}  newbrand={true}  />))}
+       {cars.map((car) => (<PracticeLitteMore key={car.id} brand={car.brand} color={car.color}  km={car.km}  newbrand={true}  />))}
    
 
 
