@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import AddingMoreProps from './anotherfile';
 
 import './App.css';
+import CreateChildren from './CreateChildren';
 import PracticeLitteMore from './Des.props';
 import CreateObject from './Keys';
 import CreateAllprops from './Props';
@@ -75,14 +76,17 @@ function App() {
    
 
 
-    <CreateProps newValue='adding' >
+     <CreateProps>
      <p>adding more practice about little bit code</p>
-     <h1>adding more issues to think about through</h1>
+     <p>adding more issues to think about through</p>
      
       
     </CreateProps>
 
-
+    <CreateChildren newchildren='thought about my life!!!' >
+      <br/>
+    <strong>adding tag strong!!</strong>
+    </CreateChildren>
     </div>
   );
 }
