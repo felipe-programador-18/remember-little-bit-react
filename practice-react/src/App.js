@@ -5,6 +5,7 @@ import './App.css';
 import CreateChildren from './CreateChildren';
 import PracticeLitteMore from './Des.props';
 import CreateObject from './Keys';
+import PracticeMoreAbout from './managecode/pracitce';
 import CreateAllprops from './Props';
 import CreateAnotherPrac from './reminber';
 import CreateProps from './testcreate';
@@ -50,6 +51,8 @@ function App() {
   return (
     <div className="App">
       <AddingMoreProps name='Programer' age={29} />
+
+      <PracticeMoreAbout />
       <h1>testing another way of practice and learn more react</h1>
         <AddingFunction />
         <CreateObject/>
